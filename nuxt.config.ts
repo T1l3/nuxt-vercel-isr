@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+  nitro: {
+    preset: "vercel-edge",
+  },
   routeRules: {
     // revalidated every 60 seconds, in the background
     '/**': { isr: 60 },
